@@ -1,4 +1,4 @@
-(function() {
+(function(window) {
 
     var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
@@ -6,10 +6,10 @@
         var firstLetter = names[i].charAt(0).toLowerCase();
 
         if (firstLetter === 'j') {
-            byeSpeaker(names[i]);
+            window.byeSpeaker(names[i]);
         } else {
-            helloSpeaker(names[i]);
+            window.helloSpeaker(names[i]);
         }
     }
 
-})();
+})(window);
